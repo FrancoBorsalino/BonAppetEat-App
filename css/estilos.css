@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 1 ---------------- Google Fonts ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Roboto:wght@400;700&display=swap');
+
+.robotoRegular {
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.robotoSemibold {
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    color: RGB(230, 87, 44);
+}
+
+.robotoBold {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.manropeMedium {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* 2 ---------------- Generales + Body ---------------- */
+.noBullet {
+    list-style-type: none;
+    padding-inline: 0%;
+}
+
+/* 3 ---------------- Grid ---------------- */
+/* 3.1 ---- Grid Index ----  */
+.main__grid {
+    display: grid;
+    column-gap: 3%;
+    row-gap: 20%;
+    height: 275px;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: 0.25fr 0.85fr repeat(2, 1fr) 1.4fr repeat(2, 1.6fr) 0.6fr;
+    grid-template-areas:
+        "header header"
+        "section-buscador section-buscador"
+        "section-recetas section-recetas"
+        "section-categorias section-categorias"
+        "section-app section-app"
+        "section-newsUno section-newsAside"
+        "section-newsDos section-newsAside"
+        "footer footer"
+    ;
+}
+
+/* 3.2 ---- Grid Recetas ---- */
+.main__grid--recetas {
+    display: grid;
+    height: 275px;
+    grid-template-rows: 0.25fr 1.3fr 0.5fr repeat(2, 1fr) 0.6fr;
+    grid-template-areas:
+    "header"
+    "section-carousel"
+    "section-buscador"
+    "section-categorias"
+    "section-recetas"
+    "footer"
+    ;
+}
+
+/* 3.3 ---- Grid Sobre Nosotros ---- */
+.main__grid--sobreNosotros {
+    display: grid;
+    column-gap: 4%;
+    row-gap: 20%;
+    height: 275px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.25fr repeat(2, 1fr) 0.6fr;
+    grid-template-areas:
+        "header header"
+        "section-infoSN section-asideSN"
+        "section-carousel section-carousel"
+        "footer footer"
+    ;
+}
+
+
+/* 3.4 ---- Grid Contacto ---- */
+.main__grid--contacto {
+    display: grid;
+    height: 275px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.25fr 1fr 0.6fr;
+    grid-template-areas:
+    "header header"
+    "section-formText section-form"
+    "footer footer"
+    ;
+}
