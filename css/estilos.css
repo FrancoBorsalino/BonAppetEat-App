@@ -618,3 +618,129 @@
     margin-bottom: 0;
 }
 
+
+/* 7 ---------------- RECETAS ---------------- */
+/* 7.1 ---- CAROUSEL ---- */
+/* Carousel Bootstrap */
+.carousel-item {
+    height: 400px;
+}
+.carousel-item img {
+    object-fit: cover;
+    transform: translateY(-30%);
+}
+
+/* 7.2 ---- BUSCADOR ---- */
+.buscador--recetas {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador__barra--recetas {
+    min-width: 60%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 1rem;
+}
+
+.buscador__icono--recetas {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+}
+
+/* 7.3 ---- CATEGORIAS ---- */
+.categorias--recetas {
+    height: 100%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 7.4 ---- RECETAS ---- */
+.recetas--recetas {
+    height: 100%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* 8 ---------------- SOBRE NOSOTROS ---------------- */
+/* 8.1 ---- INFO SOBRE NOSOTROS --- */
+.info__texto {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info__texto h1 {
+    font-size: 2.25rem;
+}
+
+.info__texto p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.info__texto p strong {
+    color: rgb(230, 87, 44);
+    font-weight: 650;
+}
+
+/* 8.2 ---- FUNCIONALIDADES ---- */
+.section__funct {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.funct__sobreNosotros {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.funct__sobreNosotros img {
+    width: 50px;
+}
+
+.funct__sobreNosotros p {
+    font-size: 0.85rem;
+    padding-left: 5%;
+    margin-bottom: 0px;
+}
+
+.funct__sobreNosotros p strong {
+    color: rgba(0, 100, 90, 1);
+    font-weight: 900;
+}
+
+
+/* 8.3 ---- CAROUSEL FOTOS ---- */
+#carouselExampleSlidesOnly {
+    height: 100%;
+    margin-bottom: -55px;
+}
+
