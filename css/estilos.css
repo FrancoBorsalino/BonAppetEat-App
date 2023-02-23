@@ -4,6 +4,119 @@
 }
 
 
+/*
+ÍNDICE BONAPPETEAT CCS
+
+1- Google Fonts
+2 - Generales + Body
+3 - Grid
+    3.1 - Grid Index
+    3.2 - Grid Recetas
+    3.3 - Grid Sobre Nosotros
+    3.4 - Grid Contacto
+    3.5 - Grid Inicio Sesion + Registro
+    3.6 - Grid Areas
+4 - Header + Nav
+5 - Footer
+6 - index.html
+    6.1 - Buscador
+    6.2 - Recetas (Cards Bootstrap)
+    6.3 - Categorias
+    6.4 - App Ad
+    6.5 - Newsletter
+7 - recetas.html
+    7.1 - Carousel (Bootstrap)
+    7.2 - Buscador
+    7.3 - Categorias
+    7.4 - Recetas
+8 - sobreNosotros.html
+    8.1 - Info
+    8.2 - Funcionalidades
+    8.3 - Carousel Fotos (Bootstrap)
+9 - contacto.html
+    9.1 - Texto Feedback
+    9.2 - Formulario
+10 - iniciarSesion.html + registro.html
+    10.1 - Formulario
+11 - Media Queries (Responsive desde ≥432 hasta cualquier resolución XL - inclusive ≥1400px)
+    11.1 - XS (≥432px - 566px)
+        11.1.1 - Header
+        11.1.2 - Footer
+        11.1.3 - index.html
+            11.1.3.1 - Grid
+            11.1.3.2 - Buscador
+            11.1.3.3 - Recetas
+            11.1.3.4 - Categorias
+            11.1.3.5 - App Ad
+            11.1.3.6 - Newsletter
+        11.1.4 - recetas.html
+            11.1.4.1 - Carousel
+            11.1.4.2 - Buscador
+            11.1.4.3 - Recetas
+        11.1.5 - sobreNosotros.html
+            11.1.5.1 - Grid
+            11.1.5.2 - Info
+            11.1.5.3 - Funcionalidades
+            11.1.5.4 - Carousel Fotos
+        11.1.6 - contacto.html
+            11.1.6.1 - Grid
+            11.1.6.2 - Texto Feedback
+            11.1.6.3 - Formulario
+        11.1.7 - iniciarSesion.html + registro.html
+            11.1.7.1 - Formulario
+    11.2 - S (567px - 767px)
+        11.2.1 - Header + Nav
+        11.2.2 - Footer
+        11.2.3 - index.html
+            11.2.3.1 - Grid
+            11.2.3.2 - Recetas
+            11.2.3.3 - Categorias
+            11.2.3.4 - App Ad
+            11.2.3.5 - Newsletter
+        11.2.4 - recetas.html
+            11.2.4.1 - Carousel
+            11.2.4.2 - Buscador
+            11.2.4.3 - Recetas
+        11.2.5 - sobreNosotros.html
+            11.2.5.1 - Grid
+            11.2.5.2 - Info
+            11.2.5.3 - Funcionalidades
+        11.2.6 - contacto.html
+            11.2.6.1 - Grid
+            11.2.6.2 - Texto Feedback
+            11.2.6.3 - Formulario
+        11.2.7 - iniciarSesion.html + registro.html
+            11.2.7.1 - Formulario
+    11.3 - M (768px - 1023px)
+        11.3.1 - Header + Nav
+        11.3.2 - Footer
+        11.3.3 - index.html
+            11.3.3.1 - Grid
+            11.3.3.2 - Recetas
+            11.3.3.3 - Categorias
+            11.3.3.4 - App Ad
+            11.3.3.5 - Newsletter
+        11.3.4 - recetas.html
+            11.3.4.1 - Carousel
+            11.3.4.2 - Buscador
+            11.3.4.3 - Recetas
+        11.3.5 - contacto.html
+            11.3.5.1 - Grid
+            11.3.5.2 - Texto Feedback
+            11.3.5.3 - Formulario
+    11.4 - L (1024px - 1199px)
+        11.4.1 - index.html
+            11.4.1.1 - Grid
+            11.4.1.2 - Recetas
+            11.4.1.3 - App Ad
+        11.4.2 - recetas.html
+            11.4.2.1 - Recetas
+        11.4.3 - iniciarSesion.html + registro.html
+*/
+
+
+
+
 /* 1 ---------------- Google Fonts ---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Roboto:wght@400;700&display=swap');
 
