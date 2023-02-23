@@ -36,7 +36,31 @@
                 </ol>
             </nav>
         </header>
-
+        <section class="contacto__texto grid__formText grid__padding--left"><!-- Texto para Feedback -->
+            <h1 class="robotoBold">¡Dejanos tu opinión o consulta!</h1>
+            <p class="robotoRegular">Desde el equipo de Bon Appeteat recibiremos tu mensaje con agrado y te daremos una
+                respuesta lo más
+                pronto posible.</p>
+            <p class="robotoRegular">Podés dejarnos tu opinión siempre que desees y haremos lo mejor posible para
+                ofrecerte el mejor
+                servicio.</p>
+            <p class="robotoRegular">Gracias por tu feedback!
+            </p>
+        </section>
+        <aside class="grid__form grid__padding--right"><!-- Formulario de contacto -->
+            <form class="contacto__form" action=""> <!-- sin php para action -->
+                <input type="text" name="nombreFormContacto" id="form__nombre" placeholder="Nombre*" required
+                    class="robotoRegular">
+                <input type="email" name="emailFormContacto" id="form__email" placeholder="Mail*" required
+                    class="robotoRegular">
+                <textarea tarea name="mensajeFormContacto" id="form__mensaje" cols="30" rows="10"
+                    placeholder="Dejanos tu mensaje!*" required class="robotoRegular"></textarea>
+                <div>
+                    <input type="submit" value="ENVIAR" id="boton__submit">
+                    <input type="reset" value="BORRAR TODO" id="boton__reset">
+                </div>
+            </form>
+        </aside>
         <footer class="grid__footer">
             <ol class="main__footer">
                 <ul class=" footer__links noBullet grid__padding--left"><!-- Para iconos de redes sociales -->

@@ -744,3 +744,113 @@
     margin-bottom: -55px;
 }
 
+
+/* 9 ---------------- CONTACTO ---------------- */
+/* 9.1 ---- TEXTO FEEDBACK --- */
+.contacto__texto {
+    height: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: url(../imgs/logoBodyIndex.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position-y: 90%;
+    background-position-x: 70px;
+}
+
+.contacto__texto h1 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.contacto__texto p {
+    font-size: 0.95rem;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.contacto__texto p:nth-child(4) {
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* 9.2 ---- FORMULARIO --- */
+.contacto__form {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#form__nombre {
+    min-width: 90%;
+    height: 3.5rem;
+    border: none;
+    border-radius: 0.86rem;
+    background-color: #F0F0F0;
+    font-size: 1rem;
+    padding-left: 1.393rem;
+}
+
+#form__email {
+    min-width: 90%;
+    height: 3.5rem;
+    border: none;
+    border-radius: 0.86rem;
+    background-color: #F0F0F0;
+    font-size: 1rem;
+    padding-left: 1.393rem;
+}
+
+#form__mensaje {
+    min-width: 90%;
+    height: 15rem;
+    border: none;
+    border-radius: 0.86rem;
+    background-color: #F0F0F0;
+    font-size: 1rem;
+    padding-left: 1.393rem;
+    padding-top: 1.5rem;
+}
+
+#boton__submit {
+    padding: 0.6rem;
+    padding-right: 2.3rem;
+    padding-left: 2.3rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #00645A;
+    border: none;
+    border-radius: 0.375rem;
+    text-align: center;
+}
+
+#boton__submit:hover {
+    background-color: rgb(0, 100, 90, 75%);
+}
+
+#boton__reset {
+    padding: 0.6rem;
+    padding-right: 1em;
+    padding-left: 1rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #00645A;
+    border: none;
+    border-radius: 0.375rem;
+    text-align: center;
+}
+
+#boton__reset:hover {
+    background-color: rgb(0, 100, 90, 75%)
+}
+
