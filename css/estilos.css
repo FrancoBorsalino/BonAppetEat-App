@@ -323,3 +323,298 @@
     font-size: 0.7rem;
 }
 
+
+/* 6 ---------------- INDEX ---------------- */
+/* 6.1 ---- BUSCADOR ---- */
+.buscador {
+    height: 200px;
+    background-image: url(../imgs/logoBodyIndex.png);
+    background-repeat: no-repeat;
+    background-size: 175px;
+    background-position-y: 30px;
+    background-position-x: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.buscador__icono {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+}
+
+.buscador__barra {
+    width: 490px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.8rem;
+}
+
+/* 6.2 ---- RECETAS ---- */
+.recetas {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recetas__titulo {
+    align-self: flex-start;
+    padding-bottom: 0.7%;
+}
+
+.recetas__cards {
+    height: 220px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* Cards Bootstrap */
+.card {
+    max-height: 70%;
+    max-width: 15%;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+}
+
+.card-img-top {
+    min-height: 70%;
+    min-width: 100%;
+    object-fit: cover;
+    margin-bottom: -0.5rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-body {
+    max-height: 30%;
+    overflow-y: visible;
+    margin: 0%;
+    margin-top: 1rem;
+    padding: 0%;
+}
+
+.card-title {
+    max-height: 20%;
+    font-size: 0.975rem;
+    margin-bottom: 40px;
+}
+
+.card-text {
+    max-height: 80%;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+/* 6.3 ---- CATEGORIAS ---- */
+.categorias {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.categorias__titulo {
+    align-self: flex-start;
+    padding-bottom: 0.7%;
+    text-align: start;
+}
+
+.categorias__row {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-self: normal;
+}
+
+.categorias__card {
+    max-width: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.categorias__card--titulo {
+    font-size: 0.75rem;
+}
+
+.categorias__card--img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+/* 6.4 ---- APP AD ---- */
+.app__ad {
+    max-width: 100%;
+    height: 280px;
+    background-color: rgba(0, 100, 90, 0.25);
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-image: url(../imgs/mockupsApp.png);
+    background-size: 240px;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.ad__texto--chico {
+    font-size: 1rem;
+}
+
+.ad__texto--grande {
+    font-size: 2rem;
+    width: 50%;
+}
+
+.ad__texto--s {
+    font-weight: 800;
+    color: RGB(230, 87, 44)
+}
+
+.ad__downloadLogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.app__androidLogo {
+    height: 27.5px;
+    padding-right: 15px;
+}
+
+.app__iosLogo {
+    height: 27.5px;
+}
+
+/* 6.5 ---- NEWSLETTER ---- */
+/* Noticia grande */
+.newsletter__noticia {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.noticia__imagen {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -26px;
+    border-radius: 15px;
+}
+
+.noticia__descripcion {
+    background-color: white;
+    min-height: 80px;
+    width: 85%;
+    border: 0.012rem solid #b6b6b6;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0rem 1.25rem 1.25rem -1.6rem rgb(88, 88, 88);
+}
+
+.descripcion__titulo {
+    color: rgba(0, 100, 90, 1);
+    font-style: italic;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.descripcion__divider {
+    width: 47px;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.descripcion__autor {
+    margin: 0 auto;
+    color: rgba(230, 87, 44, 1);
+    font-size: 0.675rem;
+}
+
+/* Aside noticias chicas */
+.newsletter__noticia--aside {
+    height: 675px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noticia__aside {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.aside__imagen {
+    height: 80%;
+    min-width: 40%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.aside__descripcion {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descripcionA__titulo {
+    color: rgba(0, 100, 90, 1);
+    font-style: italic;
+    font-size: 0.775rem;
+    padding-left: 25px;
+    margin-bottom: 0;
+}
+
+.descripcionA__divider {
+    margin-left: 25px;
+    width: 47px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.descripcionA__autor {
+    color: rgba(230, 87, 44, 1);
+    font-size: 0.7rem;
+    padding-left: 25px;
+    margin-bottom: 0;
+}
+
