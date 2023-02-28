@@ -38,8 +38,8 @@
     9.2 - Formulario
 10 - iniciarSesion.html + registro.html
     10.1 - Formulario
-11 - Media Queries (Responsive desde ≥432 hasta cualquier resolución XL - inclusive ≥1400px)
-    11.1 - XS (≥432px - 566px)
+11 - Media Queries (Responsive desde ≥320 hasta cualquier resolución XL - inclusive ≥1400px)
+    11.1 - XXS (≥320 - 431px)
         11.1.1 - Header
         11.1.2 - Footer
         11.1.3 - index.html
@@ -64,15 +64,16 @@
             11.1.6.3 - Formulario
         11.1.7 - iniciarSesion.html + registro.html
             11.1.7.1 - Formulario
-    11.2 - S (567px - 767px)
-        11.2.1 - Header + Nav
+    11.2 - XS (432px - 566px)
+        11.2.1 - Header
         11.2.2 - Footer
         11.2.3 - index.html
             11.2.3.1 - Grid
-            11.2.3.2 - Recetas
-            11.2.3.3 - Categorias
-            11.2.3.4 - App Ad
-            11.2.3.5 - Newsletter
+            11.2.3.2 - Buscador
+            11.2.3.3 - Recetas
+            11.2.3.4 - Categorias
+            11.2.3.5 - App Ad
+            11.2.3.6 - Newsletter
         11.2.4 - recetas.html
             11.2.4.1 - Carousel
             11.2.4.2 - Buscador
@@ -81,13 +82,14 @@
             11.2.5.1 - Grid
             11.2.5.2 - Info
             11.2.5.3 - Funcionalidades
+            11.2.5.4 - Carousel Fotos
         11.2.6 - contacto.html
             11.2.6.1 - Grid
             11.2.6.2 - Texto Feedback
             11.2.6.3 - Formulario
         11.2.7 - iniciarSesion.html + registro.html
             11.2.7.1 - Formulario
-    11.3 - M (768px - 1023px)
+    11.3 - S (567px - 767px)
         11.3.1 - Header + Nav
         11.3.2 - Footer
         11.3.3 - index.html
@@ -100,18 +102,41 @@
             11.3.4.1 - Carousel
             11.3.4.2 - Buscador
             11.3.4.3 - Recetas
-        11.3.5 - contacto.html
+        11.3.5 - sobreNosotros.html
             11.3.5.1 - Grid
-            11.3.5.2 - Texto Feedback
-            11.3.5.3 - Formulario
-    11.4 - L (1024px - 1199px)
-        11.4.1 - index.html
-            11.4.1.1 - Grid
-            11.4.1.2 - Recetas
-            11.4.1.3 - App Ad
-        11.4.2 - recetas.html
-            11.4.2.1 - Recetas
-        11.4.3 - iniciarSesion.html + registro.html
+            11.3.5.2 - Info
+            11.3.5.3 - Funcionalidades
+        11.3.6 - contacto.html
+            11.3.6.1 - Grid
+            11.3.6.2 - Texto Feedback
+            11.3.6.3 - Formulario
+        11.3.7 - iniciarSesion.html + registro.html
+            11.3.7.1 - Formulario
+    11.4 - M (768px - 1023px)
+        11.4.1 - Header + Nav
+        11.4.2 - Footer
+        11.4.3 - index.html
+            11.4.3.1 - Grid
+            11.4.3.2 - Recetas
+            11.4.3.3 - Categorias
+            11.4.3.4 - App Ad
+            11.4.3.5 - Newsletter
+        11.4.4 - recetas.html
+            11.4.4.1 - Carousel
+            11.4.4.2 - Buscador
+            11.4.4.3 - Recetas
+        11.4.5 - contacto.html
+            11.4.5.1 - Grid
+            11.4.5.2 - Texto Feedback
+            11.4.5.3 - Formulario
+    11.5 - L (1024px - 1199px)
+        11.5.1 - index.html
+            11.5.1.1 - Grid
+            11.5.1.2 - Recetas
+            11.5.1.3 - App Ad
+        11.5.2 - recetas.html
+            11.5.2.1 - Recetas
+        11.5.3 - iniciarSesion.html + registro.html
 */
 
 
@@ -393,7 +418,7 @@
 /* 5 ---------------- Footer ---------------- */
 .main__footer {
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     height: 70px;
     background: rgb(230, 87, 44);
     background-position-y: bottom;
@@ -1012,9 +1037,359 @@
 
 
 /* 11 ---------------- MEDIA QUERIES ---------------- */
-/* 11.1 ----------------------------- XS ----------------------------- */
-@media screen and (min-width: 432px) and (max-width: 566px) {
+/* 11.1 ----------------------------- XXS ----------------------------- */
+@media screen and (min-width: 320px) and (max-width: 431px) {
     /* 11.1.1 -- Header + Nav -- */
+    .robotoSemibold {
+        font-weight: 550;   
+        font-size: 0.7rem;
+    }
+    
+    .navBar {
+        height: 100px;
+    }
+    
+    .navBar__links {
+        align-items: flex-start;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navBar__links--center {
+        min-width: 80%;
+        max-width: 85%;
+        margin-left: -85px;
+        margin-right: -190px;
+        align-self: flex-end;
+    }
+    
+    .navBar__links--login {
+        width: 190px;
+        scale: 75%;
+    }
+
+    
+    #logoNavBar {
+        width: 85px;
+    }
+    
+    #registroButton {
+        color: #ffffff;
+        background-color: RGB(230, 87, 44);
+        text-align: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        border-radius: 0.2rem;
+        }
+    
+    /* 11.1.2 -- Footer -- */
+    .main__footer {
+        position: relative;
+        margin-bottom: 0;
+        height: 150px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .footer__links-- img {
+        height: 20px;
+    }
+
+    .footer__legal {
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__legal--links {
+        font-weight: 100;
+        font-size: 0.6rem;
+    }
+
+    /* 11.1.3 -- Index -- */
+    /* 11.1.3.1 Grid */
+    .main__grid {
+        display: grid;
+        row-gap: 20px;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 0.85fr repeat(2, 1fr) 1.4fr repeat(3, 1.6fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-buscador"
+            "section-recetas"
+            "section-categorias"
+            "section-app"
+            "section-newsUno"
+            "section-newsDos"
+            "section-newsAside"
+            "footer"
+        ;
+    }
+    
+    .grid__padding--left {
+        padding-left: 10px;
+    }
+
+    .grid__padding--right {
+        padding-right: 10px;
+    }
+
+    /* 11.1.3.2 Buscador */
+    .buscador {
+        scale: 80%;
+    }
+
+    .buscador__barra {
+        width: 80%;
+    }
+
+    /* 11.1.3.3 Recetas */
+    .recetas {
+        min-height: 700px;
+        min-width: 30%;
+        max-width: 100%;
+    }
+
+    .recetas__titulo {
+        font-size: 0.85rem;
+    }
+    .recetas__cards {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .card {
+        max-height: 130px;
+        min-width: 33%;
+        max-width: 45%;
+    }
+
+    .card-img-top {
+        height: 40%;
+    }
+    
+    .card-body {
+        max-height: 70%;
+    }
+    
+    .card-title {
+        margin-bottom: 0px;
+        font-size: 0.85rem;
+    }
+    
+    .card-text {
+        margin-top: 0.5rem;
+        font-size: 0.625rem;
+    }
+
+    /* 11.1.3.4 Categorias */
+    .categorias {
+        min-height: 800px;
+        min-width: 320px;
+        max-width: 431px;
+    }
+
+    .categorias__titulo {
+        font-size: 0.9rem;
+    }
+
+    .categorias__row {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .categorias__card {
+        max-height: 60px;
+        max-width: 48%;
+    }
+
+    .categorias__card--titulo {
+        font-size: 0.75rem;
+    }
+
+    /* 11.1.3.5 App Ad */
+    .app__ad {
+        height: 300;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-size: 30%;
+    }
+
+    .ad__texto--chico {
+        font-size: 0.7rem;
+    }
+
+    .ad__texto--grande {
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    /* 11.1.3.6 Newsletter */
+    .newsletter__noticia {
+        padding-right: 10px;
+    }
+
+    .newsletter__noticia--aside {
+        padding-left: 10px;
+    }
+
+    /* 11.1.4 -- Recetas -- */
+    /* 11.1.4.1 Carousel */
+    .carousel-item {
+        height: 150px;
+    }
+    .carousel-item img {
+        object-fit: cover;
+        transform: translateY(-15%);
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.3rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.675rem;
+    }
+
+
+    /* 11.1.4.2 Buscador */
+    .buscador__icono--recetas {
+        width: 20px;
+        height: 20px;
+    }
+    .buscador__barra--recetas {
+        height: 40px;
+        min-width: 80%;
+        font-size: 0.76rem;
+    }
+
+    /* 11.1.4.3 Recetas */
+    .recetas--recetas {
+        min-height: 700px;
+        min-width: 320px;
+        max-width: 431px;
+    }
+
+    /* 11.1.5 -- Sobre Nosotros -- */
+    /* 11.1.5.1 Grid */
+    .main__grid--sobreNosotros {
+        display: grid;
+        row-gap: 20%;
+        height: 275px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr repeat(3, 1fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-infoSN"
+            "section-asideSN"
+            "section-carousel"
+            "footer"
+        ;
+    }
+
+    /* 11.1.5.2 Info */
+    .info__texto {
+        padding-right: 10px;
+    }
+
+    .info__texto h1 {
+        font-size: 1.5rem;
+    }
+
+    .info__texto p {
+        font-size: 0.7rem;
+    }
+
+    /* 11.1.5.3 Funcionalidades */
+    .section__funct {
+        padding-left: 10px;
+    }
+
+    .funct__sobreNosotros img {
+        width: 40px;
+    }
+
+    .funct__sobreNosotros p {
+        font-size: 0.675rem;
+    }
+
+    /* 11.1.5.4 Carousel Fotos */
+    #carouselExampleSlidesOnly {
+        margin-bottom: -55px;
+    }
+
+    /* 11.1.6 -- Contacto -- */
+    /* 11.1.6.1 Grid */
+    .main__grid--contacto{
+        display: grid;
+        row-gap: 20%;
+        height: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr repeat(2, 1fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-formText"
+            "section-form"
+            "footer"
+        ;
+    }
+    
+    /* 11.1.6.2 Texto Feedback */
+    .contacto__texto {
+        padding-top: 20px;
+        height: 500px;
+        background-position-x: center;
+    }
+
+    .contacto__texto h1 {
+        font-size: 1.4rem;
+    }
+
+    .contacto__texto p {
+        font-size: 0.75rem;
+    }
+
+    /* 11.1.6.3 Formulario */
+    .contacto__form {
+        align-items: center;
+        padding-left: -10px;
+    }
+
+    /* 11.1.7 -- Iniciar Sesion + Registro */
+    /* 11.1.7.1 Formulario */
+
+    .main__grid--sesion {
+        display: grid;
+        height: 275px;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 0.25fr 1fr 0.6fr;
+        grid-template-areas:
+        "header header header"
+        ". sesion-form ."
+        "footer footer footer"
+        ;
+    }
+
+    .sesion__titulo {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    #boton__login {
+        margin-left: 5%;
+    }
+
+}
+
+/* 11.2 ----------------------------- XS ----------------------------- */
+@media screen and (min-width: 432px) and (max-width: 566px) {
+    /* 11.2.1 -- Header + Nav -- */
     .robotoSemibold {
         font-weight: 550;   
         font-size: 0.7rem;
@@ -1059,7 +1434,7 @@
         border-radius: 0.2rem;
         }
     
-    /* 11.1.2 -- Footer -- */
+    /* 11.2.2 -- Footer -- */
     .main__footer {
         height: 150px;
         flex-direction: column;
@@ -1084,8 +1459,8 @@
         font-size: 0.6rem;
     }
 
-    /* 11.1.3 -- Index -- */
-    /* 11.1.3.1 Grid */
+    /* 11.2.3 -- Index -- */
+    /* 11.2.3.1 Grid */
     .main__grid {
         display: grid;
         row-gap: 30px;
@@ -1113,12 +1488,12 @@
         padding-right: 10px;
     }
 
-    /* 11.1.3.2 Buscador */
+    /* 11.2.3.2 Buscador */
     .buscador__barra {
         width: 70%;
     }
 
-    /* 11.1.3.3 Recetas */
+    /* 11.2.3.3 Recetas */
     .recetas {
         min-height: 625px;
         min-width: 30%;
@@ -1157,7 +1532,7 @@
         font-size: 0.575rem;
     }
 
-    /* 11.1.3.4 Categorias */
+    /* 11.2.3.4 Categorias */
     .categorias {
         min-height: 420px;
         min-width: 432px;
@@ -1182,7 +1557,7 @@
         font-size: 0.675rem;
     }
 
-    /* 11.1.3.5 App Ad */
+    /* 11.2.3.5 App Ad */
     .app__ad {
         height: 300;
         margin-left: 10px;
@@ -1199,7 +1574,7 @@
         width: 60%;
     }
 
-    /* 11.1.3.6 Newsletter */
+    /* 11.2.3.6 Newsletter */
     .newsletter__noticia {
         padding-right: 10px;
     }
@@ -1208,8 +1583,8 @@
         padding-left: 10px;
     }
 
-    /* 11.1.4 -- Recetas -- */
-    /* 11.1.4.1 Carousel */
+    /* 11.2.4 -- Recetas -- */
+    /* 11.2.4.1 Carousel */
     .carousel-item {
         height: 200px;
     }
@@ -1227,7 +1602,7 @@
     }
 
 
-    /* 11.1.4.2 Buscador */
+    /* 11.2.4.2 Buscador */
     .buscador__icono--recetas {
         width: 25px;
         height: 25px;
@@ -1238,15 +1613,15 @@
         font-size: 0.8rem;
     }
 
-    /* 11.1.4.3 Recetas */
+    /* 11.2.4.3 Recetas */
     .recetas--recetas {
         min-height: 625px;
         min-width: 432px;
         max-width: 566px;
     }
 
-    /* 11.1.5 -- Sobre Nosotros -- */
-    /* 11.1.5.1 Grid */
+    /* 11.2.5 -- Sobre Nosotros -- */
+    /* 11.2.5.1 Grid */
     .main__grid--sobreNosotros {
         display: grid;
         row-gap: 20%;
@@ -1262,7 +1637,7 @@
         ;
     }
 
-    /* 11.1.5.2 Info */
+    /* 11.2.5.2 Info */
     .info__texto {
         padding-right: 10px;
     }
@@ -1275,18 +1650,18 @@
         font-size: 0.85rem;
     }
 
-    /* 11.1.5.3 Funcionalidades */
+    /* 11.2.5.3 Funcionalidades */
     .section__funct {
         padding-left: 10px;
     }
 
-    /* 11.1.5.4 Carousel Fotos */
+    /* 11.2.5.4 Carousel Fotos */
     #carouselExampleSlidesOnly {
         margin-bottom: -85px;
     }
 
-    /* 11.1.6 -- Contacto -- */
-    /* 11.1.6.1 Grid */
+    /* 11.2.6 -- Contacto -- */
+    /* 11.2.6.1 Grid */
     .main__grid--contacto{
         display: grid;
         row-gap: 20%;
@@ -1301,7 +1676,7 @@
         ;
     }
     
-    /* 11.1.6.2 Texto Feedback */
+    /* 11.2.6.2 Texto Feedback */
     .contacto__texto {
         padding-top: 20px;
         height: 500px;
@@ -1316,16 +1691,15 @@
         font-size: 0.9rem;
     }
 
-    /* 11.1.6.3 Formulario */
+    /* 11.2.6.3 Formulario */
     .contacto__form {
         align-items: center;
         padding-left: -10px;
     }
 
-    /* 11.1.7 -- Iniciar Sesion + Registro */
-    /* 11.1.7.1 Formulario */
-        /* 12.2.7 -- Iniciar Sesion + Registro -- */
-    /* 12.2.7.1 Formulario */
+
+    /* 11.2.7 -- Iniciar Sesion + Registro -- */
+    /* 11.2.7.1 Formulario */
     .main__grid--sesion {
         display: grid;
         height: 275px;
@@ -1349,9 +1723,9 @@
 
 }
 
-/* 11.2 ----------------------------- S ----------------------------- */
+/* 11.3 ----------------------------- S ----------------------------- */
 @media screen and (min-width: 567px) and (max-width: 767px) {
-    /* 11.2.1 -- Header + Nav -- */
+    /* 11.3.1 -- Header + Nav -- */
     .robotoSemibold {
         font-weight: 550;   
         font-size: 0.7rem;
@@ -1386,7 +1760,7 @@
         border-radius: 0.2rem;
     }
     
-    /* 11.2.2 -- Footer -- */
+    /* 11.3.2 -- Footer -- */
     .main__footer {
         height: 100px;
         flex-direction: column;
@@ -1406,8 +1780,8 @@
         font-size: 0.6rem;
     }
 
-    /* 11.2.3 -- Index -- */
-    /* 11.2.3.1 Grid */
+    /* 11.3.3 -- Index -- */
+    /* 11.3.3.1 Grid */
     .main__grid {
         display: grid;
         row-gap: 30px;
@@ -1435,7 +1809,7 @@
         padding-right: 10px;
     }
 
-    /* 11.2.3.2 Recetas */
+    /* 11.3.3.2 Recetas */
     .recetas {
         height: 550px;
         min-width: 576px;
@@ -1468,7 +1842,7 @@
         font-size: 0.7rem;
     }
 
-    /* 11.2.3.3 Categorias */
+    /* 11.3.3.3 Categorias */
     .categorias {
         min-height: 420px;
         min-width: 576px;
@@ -1485,7 +1859,7 @@
         max-width: 19%;
     }
 
-    /* 11.2.3.4 App Ad */
+    /* 11.3.3.4 App Ad */
     .app__ad {
         height: 300;
         margin-left: 10px;
@@ -1500,7 +1874,7 @@
         font-size: 1.5rem;
     }
 
-    /* 11.2.3.5 Newsletter */
+    /* 11.3.3.5 Newsletter */
     .newsletter__noticia {
         padding-right: 10px;
     }
@@ -1509,8 +1883,8 @@
         padding-left: 10px;
     }
 
-    /* 11.2.4 -- Recetas -- */
-    /* 11.2.4.1 Carousel */
+    /* 11.3.4 -- Recetas -- */
+    /* 11.3.4.1 Carousel */
     .carousel-item {
         height: 200px;
     }
@@ -1527,7 +1901,7 @@
         font-size: 0.675rem;
     }
 
-    /* 11.2.4.2 Buscador */
+    /* 11.3.4.2 Buscador */
     .buscador__icono--recetas {
         width: 25px;
         height: 25px;
@@ -1538,15 +1912,15 @@
         font-size: 0.8rem;
     }
 
-    /* 11.2.4.3 Recetas */
+    /* 11.3.4.3 Recetas */
     .recetas--recetas {
         min-height: 550px;
         min-width: 576px;
         max-width: 739px;
     }
 
-    /* 11.2.5 -- Sobre Nosotros -- */
-    /* 11.2.5.1 Grid */
+    /* 11.3.5 -- Sobre Nosotros -- */
+    /* 11.3.5.1 Grid */
     .main__grid--sobreNosotros {
         display: grid;
         row-gap: 20%;
@@ -1562,17 +1936,17 @@
         ;
     }
 
-    /* 11.2.5.2 Info */
+    /* 11.3.5.2 Info */
     .info__texto {
         padding-right: 10px;
     }
-    /* 11.2.5.3 Funcionalidades */
+    /* 11.3.5.3 Funcionalidades */
     .section__funct {
         padding-left: 10px;
     }
 
-    /* 11.2.6 -- Contacto -- */
-    /* 11.2.6.1 Grid */
+    /* 11.3.6 -- Contacto -- */
+    /* 11.3.6.1 Grid */
     .main__grid--contacto{
         display: grid;
         row-gap: 20%;
@@ -1587,7 +1961,7 @@
         ;
     }
     
-    /* 11.2.6.2 Texto Feedback */
+    /* 11.3.6.2 Texto Feedback */
     .contacto__texto {
         height: 500px;
         background-position-x: center;
@@ -1604,7 +1978,7 @@
         font-size: 1.2rem;
     }
 
-    /* 11.2.6.3 Formulario */
+    /* 11.3.6.3 Formulario */
     .contacto__form {
         align-items: center;
         padding-left: -10px;
@@ -1615,8 +1989,8 @@
     }
 
 
-    /* 11.2.7 -- Iniciar Sesion + Registro -- */
-    /* 11.2.7.1 Formulario */
+    /* 11.3.7 -- Iniciar Sesion + Registro -- */
+    /* 11.3.7.1 Formulario */
     .main__grid--sesion {
         display: grid;
         height: 275px;
@@ -1635,9 +2009,9 @@
 
 }
 
-/* 11.3 ----------------------------- M ----------------------------- */
+/* 11.4 ----------------------------- M ----------------------------- */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* 11.3.1 -- Header + Nav -- */
+    /* 11.4.1 -- Header + Nav -- */
     .robotoSemibold {
         font-weight: 550;
         font-size: 0.7rem;
@@ -1670,7 +2044,7 @@
         border-radius: 0.25rem;
     }
 
-    /* 11.3.2 -- Footer -- */
+    /* 11.4.2 -- Footer -- */
     .main__footer {
         height: 100px;
         flex-direction: column;
@@ -1690,8 +2064,8 @@
         font-size: 0.7rem;
     }
 
-    /* 11.3.3 -- Index -- */
-    /* 11.3.3.1 Grid */
+    /* 11.4.3 -- Index -- */
+    /* 11.4.3.1 Grid */
     .main__grid {
         grid-template-columns: 1.2fr 1fr;
         row-gap: 20px;
@@ -1705,7 +2079,7 @@
         padding-right: 20px;
     }
 
-    /* 11.3.3.2 Recetas */
+    /* 11.4.3.2 Recetas */
     .recetas {
         height: 510px;
         min-width: 768px;
@@ -1738,7 +2112,7 @@
         font-size: 0.7rem;
     }
 
-    /* 11.3.3.3 Categorias */
+    /* 11.4.3.3 Categorias */
     .categorias {
         height: 400px;
         min-width: 768px;
@@ -1758,14 +2132,14 @@
         max-width: 18%;
     }
 
-    /* 11.3.3.4 App Ad */
+    /* 11.4.3.4 App Ad */
     .app__ad {
         height: 90%;
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    /* 11.3.3.5 Newsletter */
+    /* 11.4.3.5 Newsletter */
     .descripcion__titulo {
         font-size: 0.9rem;
     }
@@ -1781,8 +2155,8 @@
         font-size: 0.6rem;
     }
 
-    /* 11.3.4 -- Recetas --  */
-    /* 11.3.4.1 Carousel */
+    /* 11.4.4 -- Recetas --  */
+    /* 11.4.4.1 Carousel */
     .carousel-item {
         height: 300px;
     }
@@ -1800,13 +2174,13 @@
         font-size: 0.675rem;
     }
 
-    /* 11.3.4.2 Buscador */
+    /* 11.4.4.2 Buscador */
     .buscador__barra--recetas {
         min-width: 70%;
         height: 55px;
     }
 
-    /* 11.3.4.3 Recetas */
+    /* 11.4.4.3 Recetas */
     .recetas--recetas {
         min-height: 510px;
         min-width: 768px;
@@ -1815,10 +2189,10 @@
 
 }
 
-/* 11.4 ----------------------------- L ----------------------------- */
+/* 11.5 ----------------------------- L ----------------------------- */
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
-    /* 11.4.1 -- Index -- */
-    /* 11.4.1.1 Grid */
+    /* 11.5.1 -- Index -- */
+    /* 11.5.1.1 Grid */
     .main__grid {
         row-gap: 40px;
     }
@@ -1831,7 +2205,7 @@
         padding-right: 40px;
     }
 
-    /* 11.4.1.2 Recetas */
+    /* 11.5.1.2 Recetas */
     .recetas {
         height: 230px;
     }
@@ -1862,15 +2236,15 @@
         width: 100%;
     }
 
-    /* 11.4.1.3 App Ad */
+    /* 11.5.1.3 App Ad */
     .app__ad {
         height: 90%;
         margin-left: 40px;
         margin-right: 40px;
     }
 
-    /* 11.4.2 -- Recetas -- */
-    /* 11.4.2.1 Recetas */
+    /* 11.5.2 -- Recetas -- */
+    /* 11.5.2.1 Recetas */
     .recetas--recetas {
         height: 280px;
     }
