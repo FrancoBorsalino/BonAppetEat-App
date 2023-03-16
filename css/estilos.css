@@ -64,7 +64,13 @@
     font-size: 0.7rem;
   }
 }
-/* CAMBIAR ESTOS PARAMETROS */
+.scale {
+  transition: all 0.5s;
+}
+.scale:hover {
+  transform: scale(1.2);
+}
+
 .main__grid {
   display: grid;
   height: 275px;
