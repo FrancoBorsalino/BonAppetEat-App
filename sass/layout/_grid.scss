@@ -1,15 +1,8 @@
-$grid_estilo: (
-    display: grid,
-    column-gap: 3%,
-    row-gap: 20%,
-    height: 275px,
-);
+@use '../utilities';
 
 .main__grid {
-    display: map-get($grid_estilo, display);
-    column-gap: map-get($grid_estilo, column-gap);
-    row-gap: map-get($grid_estilo, row-gap);
-    height: map-get($grid_estilo, hight);
+    @include utilities.grid_base;
+    @include utilities.grid_gaps;
     grid-template-columns: 1.4fr 1fr;
     grid-template-rows: 0.25fr 0.85fr repeat(2, 1fr) 1.4fr repeat(2, 1.6fr) 0.6fr;
     grid-template-areas:
@@ -25,24 +18,21 @@ $grid_estilo: (
 }
 
 .main__grid--recetas {
-    display: map-get($grid_estilo, display);
-    height: map-get($grid_estilo, hight);
+    @include utilities.grid_base;
     grid-template-rows: 0.25fr 1.3fr 0.5fr repeat(2, 1fr) 0.6fr;
     grid-template-areas:
-    "header"
-    "section-carousel"
-    "section-buscador"
-    "section-categorias"
-    "section-recetas"
-    "footer"
+        "header"
+        "section-carousel"
+        "section-buscador"
+        "section-categorias"
+        "section-recetas"
+        "footer"
     ;
 }
 
 .main__grid--sobreNosotros {
-    display: map-get($grid_estilo, display);
-    column-gap: map-get($grid_estilo, column-gap);
-    row-gap: map-get($grid_estilo, row-gap);
-    height: map-get($grid_estilo, hight);
+    @include utilities.grid_base;
+    @include utilities.grid_gaps;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.25fr repeat(2, 1fr) 0.6fr;
     grid-template-areas:
@@ -53,28 +43,25 @@ $grid_estilo: (
     ;
 }
 
-
 .main__grid--contacto {
-    display: map-get($grid_estilo, display);
-    height: map-get($grid_estilo, hight);
+    @include utilities.grid_base;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.25fr 1fr 0.6fr;
     grid-template-areas:
-    "header header"
-    "section-formText section-form"
-    "footer footer"
+        "header header"
+        "section-formText section-form"
+        "footer footer"
     ;
 }
 
 .main__grid--sesion {
-    display: map-get($grid_estilo, display);
-    height: map-get($grid_estilo, hight);
+    @include utilities.grid_base;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 0.25fr 1fr 0.6fr;
     grid-template-areas:
-    "header header header"
-    ". sesion-form ."
-    "footer footer footer"
+        "header header header"
+        ". sesion-form ."
+        "footer footer footer"
     ;
 }
 
@@ -144,4 +131,243 @@ $grid_estilo: (
 
 .grid__padding--right {
     padding-right: 70px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 431px) {
+    .main__grid {
+        display: grid;
+        row-gap: 20px;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 0.85fr repeat(2, 1fr) 1.4fr repeat(3, 1.6fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-buscador"
+            "section-recetas"
+            "section-categorias"
+            "section-app"
+            "section-newsUno"
+            "section-newsDos"
+            "section-newsAside"
+            "footer"
+        ;
+    }
+
+    .main__grid--sobreNosotros {
+        display: grid;
+        row-gap: 20%;
+        height: 275px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr repeat(3, 1fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-infoSN"
+            "section-asideSN"
+            "section-carousel"
+            "footer"
+        ;
+    }
+
+    .main__grid--contacto{
+        display: grid;
+        row-gap: 20%;
+        height: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr repeat(2, 1fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-formText"
+            "section-form"
+            "footer"
+        ;
+    }
+
+    .main__grid--sesion {
+        display: grid;
+        height: 275px;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 0.25fr 1fr 0.6fr;
+        grid-template-areas:
+        "header header header"
+        ". sesion-form ."
+        "footer footer footer"
+        ;
+    }
+
+    .grid__padding--left {
+        padding-left: 10px;
+    }
+
+    .grid__padding--right {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 432px) and (max-width: 566px) {
+    .main__grid {
+        display: grid;
+        row-gap: 30px;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 0.85fr repeat(2, 1fr) 1.4fr repeat(3, 1.6fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-buscador"
+            "section-recetas"
+            "section-categorias"
+            "section-app"
+            "section-newsUno"
+            "section-newsDos"
+            "section-newsAside"
+            "footer"
+        ;
+    }
+
+    .main__grid--sobreNosotros {
+        display: grid;
+        row-gap: 20%;
+        height: 275px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr repeat(3, 1fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-infoSN"
+            "section-asideSN"
+            "section-carousel"
+            "footer"
+        ;
+    }
+
+    .main__grid--contacto{
+        display: grid;
+        row-gap: 20%;
+        height: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr repeat(2, 1fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-formText"
+            "section-form"
+            "footer"
+        ;
+    }
+
+    .main__grid--sesion {
+        display: grid;
+        height: 275px;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 0.25fr 1fr 0.6fr;
+        grid-template-areas:
+        "header header header"
+        ". sesion-form ."
+        "footer footer footer"
+        ;
+    }
+
+    .grid__padding--left {
+        padding-left: 10px;
+    }
+
+    .grid__padding--right {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 567px) and (max-width: 767px) {
+    .main__grid {
+        display: grid;
+        row-gap: 30px;
+        height: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 0.85fr repeat(2, 1fr) 1.4fr repeat(3, 1.6fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-buscador"
+            "section-recetas"
+            "section-categorias"
+            "section-app"
+            "section-newsUno"
+            "section-newsDos"
+            "section-newsAside"
+            "footer"
+        ;
+    }
+
+    .main__grid--sobreNosotros {
+        display: grid;
+        row-gap: 20%;
+        height: 275px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr repeat(3, 1fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-infoSN"
+            "section-asideSN"
+            "section-carousel"
+            "footer"
+        ;
+    }
+
+    .main__grid--contacto{
+        display: grid;
+        row-gap: 20%;
+        height: 275px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr repeat(2, 1fr) 0.6fr;
+        grid-template-areas:
+            "header"
+            "section-formText"
+            "section-form"
+            "footer"
+        ;
+    }
+
+    .main__grid--sesion {
+        display: grid;
+        height: 275px;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 0.25fr 1fr 0.6fr;
+        grid-template-areas:
+        "header header header"
+        ". sesion-form ."
+        "footer footer footer"
+        ;
+    }   
+
+    .grid__padding--left {
+        padding-left: 10px;
+    }
+
+    .grid__padding--right {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main__grid {
+        grid-template-columns: 1.2fr 1fr;
+        row-gap: 20px;
+    }
+
+    .grid__padding--left {
+        padding-left: 20px;
+    }
+
+    .grid__padding--right {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .main__grid {
+        row-gap: 40px;
+    }
+
+    .grid__padding--left {
+        padding-left: 40px;
+    }
+
+    .grid__padding--right {
+        padding-right: 40px;
+    }
 }
