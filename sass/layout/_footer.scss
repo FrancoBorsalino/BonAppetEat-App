@@ -1,0 +1,35 @@
+@use '../utilities';
+
+.main__footer {
+    position: absolute;
+    min-width: 100%;
+    height: 70px;
+    background: utilities.$color-primario;
+    background-position-y: bottom;
+    border-top: 1px solid rgb(146, 146, 146);
+    @include utilities.flex_R-SB-C-NW;
+}
+
+.footer__links {
+    width: 200px;
+    @include utilities.flex_R-SB-C-NW;
+    li a img {
+        height: 17px;
+    }
+}
+
+.footer__legal {
+    width: 70%;
+    @include utilities.flex_R-SB-C-NW;
+}
+
+.footer__legal--texto {
+    font-weight: 200;
+    margin-bottom: 0%;
+}
+
+.footer__legal--links {
+    font-weight: 200;
+    color: utilities.$color-blanco;
+    font-size: 0.7rem;
+}
