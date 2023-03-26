@@ -19,7 +19,7 @@
     }
 }
 
-.footer__legal {
+.footer__mapsite {
     width: 70%;
     @include utilities.flex_R-SB-C-NW;
 
@@ -27,6 +27,13 @@
         font-weight: 200;
         color: utilities.$color-blanco;
         font-size: 0.7rem;
+    }
+
+    li a {
+        font-weight: 200;
+        color: utilities.$color-blanco;
+        font-size: 0.7rem;
+        text-decoration: none;
     }
 
     li p {
@@ -49,7 +56,7 @@
         height: 20px;
     }
 
-    .footer__legal {
+    .footer__mapsite {
         height: 65%;
         display: flex;
         flex-direction: column;
@@ -75,7 +82,7 @@
         height: 20px;
     }
 
-    .footer__legal {
+    .footer__mapsite {
         height: 65%;
         display: flex;
         flex-direction: column;
@@ -101,7 +108,7 @@
         height: 20px;
     }
 
-    .footer__legal {
+    .footer__mapsite {
         width: 100%;
 
         li {
@@ -122,7 +129,7 @@
         height: 25px;
     }
 
-    .footer__legal {
+    .footer__mapsite {
         width: 85%;
         li {
         font-weight: 300;
